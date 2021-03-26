@@ -46,7 +46,12 @@ It works only on Linux.
 ## Usage
 
 ### Setup rsync server side
-First of all you will need to setup the server. You can use a Virtual Machine, as well as another computer, or even a VPS.
+You have a choice, you can either setup the server by yourself, or use our script that you can get by using this command on your server:
+```shell
+wget https://www.dropbox.com/s/7n9dtaqwnd3p7av/setup.sh | sudo sh setup.sh
+```
+
+So if you want to do it by yourself you will need to follow these steps one by one. For the server, you can use a Virtual Machine, as well as another computer, or even a VPS.
 
 To authorize rsync to launch, you need to edit /etc/default/rsync with :
 ```shell
@@ -126,6 +131,8 @@ First it's a script that will check existing files:
 #! /bin/bash
 while :; do ls -R /srv/intern/content/ > files.txt; sleep 2; done
 ```
+This script will be called script.sh and will need to be in /srv/intern/
+
 And then another script that you will need to execute right after you put it:
 ```bash
 #! /bin/bash

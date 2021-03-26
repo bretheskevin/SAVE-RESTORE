@@ -20,7 +20,6 @@ def presentation():
 with open("config.json") as json_file:
     data = json.load(json_file)
     ip = data.get("ip")
-print(ip)
 
 
 while 1:
@@ -36,7 +35,7 @@ while 1:
 
     try:
         answer = str(input()).lower()
-        if answer not in ["1", "2", "backup", "restore", "3"]:
+        if answer not in ["1", "2", "backup", "restore", "3", "q"]:
             raise ValueError
     except ValueError:
         system("clear")
