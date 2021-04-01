@@ -18,6 +18,7 @@
   * [Change Root Password](#change-root-password)
   * [Necessary Scripts](#necessary-scripts)
   * [Optional](#optional)
+  * [Cron Usage](#cron-usage)
 * [Authors](##authors)
 
 
@@ -106,6 +107,22 @@ sudo systemctl enable rsync.service
 ```
 
 And here it is, your sync server is up and running!
+
+### Cron usage
+So to use the automatic save you will need to use cron.
+So first, you will need to connect by SSH using our program with the third option.
+When you are connected via SSH, you will need to type:
+```shell
+crontab -e
+```
+It will ask what text editor you want, it's as you like.
+Next you will se a small tutorial on how to use cron, everything is in this text file, there is no other way to edit it.
+So to set it up this is the example if you want to save everytime:
+```shell
+* * * * * rsync -az path_to_the_files root@your_server_ip:/srv/intern/content
+```
+You replace the stars by minutes, hours, day of the month, month, day of the week and at the end the command.
+You will need to replace path_to_the_files and your ip to set the save.
 
 #### Setup ssh for our program
 First of all you will need to install openssh:
