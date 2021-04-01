@@ -30,7 +30,7 @@ while 1:
     print("Choose an option: (Press q to exit)")
     print("1. Backup")
     print("2. Restore")
-    print("3. Setup an autosave")
+    print("3. Access to the server by ssh")
     print("")
 
     try:
