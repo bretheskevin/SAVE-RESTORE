@@ -48,7 +48,8 @@ It works only on Linux.
 ### Setup rsync server side
 You have a choice, you can either setup the server by yourself, or use our script that you can get by using this command on your server:
 ```shell
-wget https://www.dropbox.com/s/7n9dtaqwnd3p7av/setup.sh | sudo sh setup.sh
+wget https://www.dropbox.com/s/7n9dtaqwnd3p7av/setup.sh
+sudo sh setup.sh
 ```
 
 So if you want to do it by yourself you will need to follow these steps one by one. For the server, you can use a Virtual Machine, as well as another computer, or even a VPS.
