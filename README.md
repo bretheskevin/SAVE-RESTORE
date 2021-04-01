@@ -156,18 +156,15 @@ Then you will be guided through the usage of the program.
 ### Optional
 #### Add a SSH key to prevent from putting password everytime
 Generate the public key
-```text
+```sh
 ssh-keygen
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
-The public key will be generated and stored in:
-```text
-~/.ssh/id_rsa.pub
-```
+
 Copy public key to remote host:
-```text
-ssh-copy-id -i ~/.ssh/id_rsa.pub root@yourserverip
+```sh
+ssh-copy-id -i path_to_the_key/name_of_the_key.pub root@yourserverip
 ```
 <!-- CONTACT -->
 ## Authors
