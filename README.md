@@ -84,9 +84,9 @@ sudo groupadd rsync
 sudo gpasswd -a rsync rsync
 ```
 
-After that you will choose which folder will be the location of your saved files:
+After that set the /srv/intern folder to rsync :
 ```shell
-sudo chown -R rsync:rsync /srv/intern
+sudo chown -R rsync:rsync /srv/intern/
 ``` 
 You will then need to give the rights to the folder:
 ```shell
