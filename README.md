@@ -156,7 +156,7 @@ Then you will be guided through the usage of the program.
 ### Optional
 #### Add a SSH key to prevent from putting password everytime
 Generate the public key, leave everything empty for default config.
-```sh
+```
 ssh-keygen
 Enter file in which to save the key (/home/$USERNAME/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
