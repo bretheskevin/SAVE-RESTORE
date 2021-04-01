@@ -54,6 +54,10 @@ sudo sh setup.sh
 
 So if you want to do it by yourself you will need to follow these steps one by one. For the server, you can use a Virtual Machine, as well as another computer, or even a VPS.
 
+First of all, create a content folder in /srv/inter:
+```shell
+mkdir /srv/intern/content
+```
 To authorize rsync to launch, you need to edit /etc/default/rsync with :
 ```shell
 sudo nano /etc/default/rsync
