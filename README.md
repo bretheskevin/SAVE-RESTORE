@@ -182,7 +182,7 @@ Enter same passphrase again:
 
 Copy public key to remote host:
 ```sh
-ssh-copy-id -i ~/.ssh.id_rsa.pub root@yourserverip
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@yourserverip
 ```
 <!-- CONTACT -->
 ## Authors
